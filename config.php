@@ -4,4 +4,9 @@
     $dbun = 'root';
     $dbpw = '';
     $dsn = "mysql:host=$host;dbname=$db";
-    $conn = new PDO($dsn, $dbun, $dbpw);
+    try {
+        $conn = new PDO($dsn, $dbun, $dbpw);
+    }catch(PDOException $e) {
+        print($e);
+    }
+    

@@ -1,6 +1,6 @@
 <?php
-    require_once('views/student.html');
-    if($_POST['username'] === '' || $_POST['password'] === '') {
+    require_once('login.html');
+    if(empty($_POST['username']) || empty($_POST['password'])) {
         echo "<script type='javascript'>alert('Empty Parameters')</script>";
     }
     else {
