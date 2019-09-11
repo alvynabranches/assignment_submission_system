@@ -1,3 +1,3 @@
 <?php
-require_once('views/student.html')
+    require_once('views/student.html');
 ?>
