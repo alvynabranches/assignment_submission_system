@@ -7,4 +7,6 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
     }
+    require_once('config.php');
+    
 ?>
